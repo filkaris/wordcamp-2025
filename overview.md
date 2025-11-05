@@ -9,124 +9,82 @@
 
 ---
 
-## Εισαγωγή (2 λεπτά)
-- Τίτλος
-  - Beyond ChatGPT: AI Toolkit for the WordPress Developer
-- Ποιος είμαι
-  - [Το background σου]
-  - ByteRail εμπειρία
-- Το Πρόβλημα
-  - Όλοι χρησιμοποιούν το ChatGPT γενικά
-  - Το WordPress έχει συγκεκριμένα patterns, standards, security
-- Τι θα πάρετε σήμερα
-  - Πρακτικό WordPress AI toolkit
-  - Σταματήστε το γενικό AI - εκπαιδεύστε το να σκέφτεται WordPress
+# Intro - 2'
+- Εισαγωγη
+- Λίγα λόγια για μένα
+- Για ποιον είναι η ομιλία
+    - Have you written your own plugin/theme? (not contribution)
+    - If not, I have MCP goodies at the end
+- What is the goal
+    - Explore AI tools available
+    - How to utilize them
+    - Make them wordpress-specific
 
-## Βασικά (3 λεπτά)
-- ChatGPT vs AI Assistants
-  - ChatGPT: Planning, αρχιτεκτονική
-  - GitHub Copilot/Cursor: In-IDE coding
-  - Πότε να χρησιμοποιείτε το καθένα για WordPress
-- Το Context Window έχει σημασία
-  - Τι "βλέπει" το AI
-  - Γιατί το WordPress χρειάζεται ειδικό context
+# Foundation / Definitions - 5'
+- What is "AI"
+- What is LLM
+    - Different providers
+    - Different models
+    - Different sizes
+    - Different context capacity
+- What are interfaces
+    - Chatbot
+        - examples
+    - AI Assistants
+        - examples
+        - I use copilot for screenshots. free.
+
+# AI Assistants - 15'
+
+- Why AI Assistant?
+    - Chatbot can write code, simple plugin
+    - Multiple files? project context? no copy-paste? assistant
+    - But How do they do that?
+- What is an Agent
+    - LLM, but with tools
+    - allows it to interact with the world
+    - This is how tools look in the UI
+- "Agent mode"
+    - Allows it to loop and run agent commands without human supervision
+    - You have control with permissions but you can loosen it
+- Customizing
+    - You can use instructions. Why? What do I put inside? see in next chapter
+- Plan Mode
+    - Tons of tips, don't have time to cover. Most important one for newcomers is PLANNING
+
+# WordPress Use-Cases - 5'
 - Το Focus μας σήμερα
   - System prompts
   - Grounding με WordPress documentation
   - Πρακτικά workflows
-
-## System Prompts - Το GPS για WordPress (10 λεπτά)
-- Τι είναι το System Prompt;
-  - Οδηγίες που διαβάζει το AI πριν κάθε request
-  - Το WordPress "εγχειρίδιο" για το AI σας
-- Πού ζουν τα System Prompts
-  - `.github/copilot-instructions.md`
-  - IDE settings
-  - Chat interfaces
-- WordPress System Prompt - Βασικοί Κανόνες
-  - WordPress Coding Standards
-  - Απαιτήσεις ασφαλείας (escaping, sanitization, nonces)
-  - Χρήση WP functions αντί PHP natives
-- WordPress System Prompt - Database
-  - Πάντα χρήση $wpdb
-  - Prepare όλα τα queries
-  - Χρήση table prefixes
-- WordPress System Prompt - Hooks
-  - Περιγραφικά action names
-  - Filters επιστρέφουν values
-  - Documentation με @since
-  - Default priority 10
-- Live Παράδειγμα: Πριν το System Prompt
-  - Μη ασφαλής κώδικας
-  - Direct SQL, χωρίς escaping
-- Live Παράδειγμα: Μετά το System Prompt
-  - Ίδιο request
-  - Ασφαλής WordPress κώδικας
-- Setup του System Prompt σας
-  - Δημιουργία αρχείου στο project
-  - Test με δείγματα prompts
-  - Επανάληψη και βελτίωση
-
-## Grounding με WordPress Documentation (8 λεπτά)
-- Τι είναι το Grounding;
-  - Τροφοδοτούμε το AI με το σωστό context
-  - Χρήση επίσημων docs ως αναφορά
-- Γιατί τα WordPress Docs είναι τέλεια
-  - Ολοκληρωμένο hook reference
-  - Σταθερά patterns
-  - Περιλαμβάνει παραδείγματα κώδικα
-- Τεχνική Grounding 1: Direct Links
-  - Συμπερίληψη developer.wordpress.org links
-  - Αναφορά σε συγκεκριμένες functions
-- Τεχνική Grounding 2: Hook Lists
-  - Λίστα σχετικών hooks
-  - Συμπερίληψη priorities και parameters
-- WooCommerce Παράδειγμα: Χωρίς Grounding
-  - Το AI μαντεύει hook names
-  - Παλιά ή λάθος patterns
-- WooCommerce Παράδειγμα: Με Grounding
-  - Τροφοδοτούμε checkout hooks documentation
-  - Παίρνουμε και τα 3 hooks σωστά (display, validate, save)
-- Live Demo: Πολύπλοκη Hook Implementation
-  - Προσθήκη custom checkout field
-  - Διαφορά με/χωρίς grounding
-- Καλύτερες Πηγές Documentation
-  - developer.wordpress.org
-  - Plugin documentation
-  - WooCommerce hooks reference
-
-## Πρακτικά WordPress Workflows (5 λεπτά)
+- System message for WP devs
+    - WordPress Coding Standards
+    - I write plugins with X style (classes/ functions)
+    - I write themes with Y style (css etc)
+    - I never use gutenberg blocks
+    - I ONLY use gutenberg blocks
+    - Επανάληψη και βελτίωση
+- Practical Grounding
+    - Use hooks json in repo
+    - Force to use web search
 - Workflow: Gutenberg Block από Design
   - Screenshot σε block code
   - Χρήση @wordpress/components
   - Συμπερίληψη block.json
-- Workflow: Custom Post Type
-  - Πλήρες CPT με taxonomies
-  - REST API support
-  - Admin columns
-- Workflow: Security Audit
-  - Έλεγχος escaping/sanitization
-  - Επαλήθευση nonces
-  - Review capabilities
-- Workflow: WooCommerce Extension
-  - Product customizations
-  - Checkout modifications
-  - Order processing hooks
-- Workflow: Plugin Boilerplate
-  - Σωστή δομή αρχείων
-  - Headers και metadata
-  - Activation/deactivation hooks
+- Workflow: Custom plugin with complex admin panel
+- Workflow: Something for WooCommerce?
 
-## MCP - AI που Διαχειρίζεται WordPress Content (2 λεπτά)
+# MCP Use-Cases / Examples - 5'
+
 - Τι είναι το MCP (Απλά)
   - AI που συνδέεται στο WordPress
   - Chat interface για content management
 - Use Case: Μαζικές Ενημερώσεις
   - "Ενημέρωσε όλες τις περιγραφές προϊόντων"
   - "Πρόσθεσε shipping info σε 200 προϊόντα"
-- Use Case: Δημιουργία Περιεχομένου
-  - "Δημιούργησε landing page για καμπάνια"
-  - "Δημιούργησε περιγραφές κατηγοριών"
+- Use Case: Translation
+  - "Φτιάξε τίτλους και περιγραφή στα αγγλικά για όλα τα προϊόντα"
+  - "Πρόσθεσε shipping info σε 200 προϊόντα"
 - Use Case: SEO Management
   - "Βελτιστοποίηση meta descriptions"
   - "Ενημέρωση alt texts"
@@ -136,20 +94,4 @@
   1. Εγκατάσταση GitHub Copilot (δωρεάν για OSS)
   2. Δημιουργία `.github/copilot-instructions.md`
   3. Ground τα prompts με WP documentation
-- Πόροι
-  - GitHub repo με templates
-  - WordPress AI prompts collection
-  - Προτάσεις εργαλείων
-- Το WordPress Πλεονέκτημα
-  - Εξαιρετική documentation
-  - Σταθερά patterns
-  - Ισχυρά standards
-  - Το AI μπορεί να μάθει "the WordPress way"
-
-## Προετοιμασία Q&A (15 λεπτά)
-- Συχνές Ερωτήσεις
-  - Με ποιο εργαλείο να ξεκινήσω;
-  - Είναι ασφαλής ο AI-generated κώδικας;
-  - Σύγκριση κόστους
-  - Μπορεί να γράψει ολόκληρα plugins;
-  - Θέματα privacy
+  link ?
