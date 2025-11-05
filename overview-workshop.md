@@ -1,0 +1,177 @@
+# ByteRail Workshop 2025 - Final Overview
+
+## Foundation
+- What is AI
+  - Classification progression (image-based progressive reveal)
+- What is an "LLM"
+  - Visual zoom into model structure
+- Training vs Inference
+  - Buildtime vs Runtime analogy
+  - Cost and time differences
+- What is a "Token"
+  - Tokenization example (playing → play + ing)
+- Interacting with an LLM (1/2)
+  - Tokenizer flow diagram (progressive 7-step reveal)
+- Interacting with an LLM (2/2)
+  - Simplified flow
+  - Stateless demonstration (second prompt fails)
+- Use an Interface
+  - User → Interface (ChatGPT/Copilot/Custom) → Models
+  - 9-step progressive reveal
+- Wrapping the LLM (1/2)
+  - Request/Response JSON structure
+  - System prompt + user message
+- Wrapping the LLM (2/2)
+  - Multi-turn conversation
+  - Message history array structure
+- Context Window
+  - Definition
+  - Token limits
+  - What counts as context
+- Multi-modal LLMs
+  - Image understanding via embeddings
+  - Not pixel-perfect, understands concepts
+- What is Fine-Tuning?
+  - Base model + specialized data → fine-tuned model
+  - 99% use context instead
+- Foundation Recap
+
+## AI Assistants (IDE)
+- Our Assistants
+  - Github Copilot
+  - JetBrains Junie
+- AI Assistants
+  - Multiple models, modes, integrations
+- System Prompts in Action
+  - JSON example
+  - Github Copilot full prompt excerpt
+  - JetBrains Junie full prompt excerpt
+- What are Agents?
+  - LLM + Tools + Autonomy
+- What does a Tool look like?
+  - OpenAI format
+  - MCP format
+  - System message integration
+- Common Tools
+  - Bash, Web Search, File Ops, Code Execution
+- Tools in Action
+  - Flow diagram (progressive 8-step reveal)
+  - Loop concept
+- Tools in Action / Architecture
+  - Sequence diagram (progressive 7-step reveal)
+- Tool call by LLM
+  - Request/Response example for weather tool
+- Permissions
+  - Explicit vs whitelist
+  - Never give full access
+- Tools Recap
+
+## Strategies
+- The AI Coding Journey intro
+- Your Roadmap
+  - 8 strategies preview
+- 1. Choose Your Vehicle
+  - AI Assistant (SUV) vs Chatbot (Sports Car)
+  - When to use each
+- 2. Calibrate Your GPS
+  - System prompts = navigation settings
+  - .github/copilot-instructions.md setup
+  - Ecommerce example (architecture, code style, exclusions)
+- 3. Plan Your Route
+  - PLAN mode before coding
+  - "Ask me questions" approach
+  - Git checkpoints
+  - Ecommerce example (coupon system)
+- 4. Choose Your Speed
+  - Fast (shotgun) vs Slow (sniper)
+  - Fast: standard features, minimal context
+  - Slow: bugs/edge cases, heavy grounding
+  - Before/After example
+- 5. Lane Assist
+  - AI self-verification
+  - Runs tests/checks autonomously
+  - Ecommerce example (with vs without comparison)
+- 6. Roadside Assistance
+  - A) You know the problem: guide directly
+  - B) You don't know: investigation mode
+  - Ecommerce examples for both
+- 7. Know Your Vehicle
+  - Paved Roads: what LLMs excel at
+  - Off-Road: what LLMs struggle with
+- 8. Rest Stops
+  - When to start fresh
+  - Signs you need a break
+  - Ecommerce example (separate sessions)
+- Your Journey Summary
+
+## Organization
+- Planning
+  - Proof of Concept (new integrations, new languages)
+  - Architecture Discussions
+- Documentation
+  - Project Information (avoid generic prompts)
+  - System prompts to update docs
+  - Memory Bank pattern
+  - API Contracts (Swagger generation)
+- Testing
+  - Core Tests (e2e for critical flows)
+  - Unit Tests (data providers example)
+- Organization Recap
+
+## Design-to-Code
+- An experiment
+  - Can we clone Web Bunch homepage?
+- The Starting Point
+  - Original website screenshots
+- First Attempt: Image Only
+  - Prompt + result comparison
+  - Not pixel-perfect
+- Second Attempt: Image + HTML
+  - Better results with exact values
+- Why the Difference?
+  - LLMs see concepts, not pixels
+- What Does the LLM Actually See?
+  - Recognizes structure, not exact colors/spacing
+- The Solution: Give It the Colors
+  - Combine image concepts + code values
+- Strategies for Design-to-Code intro
+- Strategy 1: Set Your Expectations
+  - Good for: prototyping, 80-90% automation
+  - Not for: pixel-perfect production
+- Strategy 2: Break into Components
+  - Smaller context = better accuracy
+- Strategy 3: Leverage Your Tech Stack
+  - Generic vs tech-specific prompts
+- Strategy 4: The Feedback Loop
+  - Iterative screenshot comparison
+  - Lane Assist approach
+- Automating the Process intro
+- Tool: Automated Screenshots with Playwright
+  - npm run screenshot workflow
+- Playwright Screenshot Example
+  - Full page screenshot code
+- Advanced: Screenshot Individual Components
+  - Component selector screenshots
+- Design-to-Code Recap
+
+## MCP
+- Recap: Tools We've Seen
+  - Tools extend LLM capabilities
+  - Parser sits between
+- Example: Screenshot "Tool"
+  - Multi-step flow with existing tools
+- What is MCP?
+  - Model Context Protocol
+- Custom Screenshot MCP Server
+  - Single tool call
+  - stdio vs http transport
+  - Example config
+- MCP Server Benefits
+  - Reusability, standardization, remote capability, grouping, integration
+- MCP Architecture
+  - Progressive 9-step diagram
+  - Local vs Cloud servers
+  - stdio vs http connections
+- Jira MCP Use Cases
+  - Workflow automation examples
+- MCP Recap
