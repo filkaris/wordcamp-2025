@@ -8,14 +8,14 @@ class: text-center
 # Beyond ChatGPT
 ## AI Toolkit for the WordPress Developer
 
+<img class="position-absolute" style="top: 10px; left: 10px; height: 100px" src="./assets/wordcamp-logo.png" />
+
 <div class="pt-12">
   <span class="text-3xl">WordCamp 2025</span>
 </div>
----
-
-# Εισαγωγή
-
-<!-- Add your personal introduction here -->
+<div class="position-absolute" style="bottom: 20px; left: 20px;">
+  <span class="text-lg">Φίλιππος Καραϊλανίδης @ ByteRail</span>
+</div>
 
 ---
 layout: two-cols-header
@@ -61,3 +61,34 @@ src: ./modules/ai-assistants.md
 src: ./modules/wordpress-usecases.md
 ---
 
+---
+src: ./modules/mcp-usecases.md
+---
+
+---
+layout: cover
+background: ./assets/wordcamp-bg.jpg
+class: text-center
+---
+
+# Σας ευχαριστώ πολύ
+
+<img class="position-absolute" style="top: 10px; left: 10px; height: 100px" src="./assets/wordcamp-logo.png" />
+
+<div class="position-absolute" style="bottom: 20px; left: 20px;">
+  <span class="text-lg">Φίλιππος Καραϊλανίδης @ ByteRail</span>
+</div>
+
+---
+layout: cover
+background: ./assets/wordcamp-bg.jpg
+class: text-center
+---
+
+# Ερωτήσεις
+
+<img class="position-absolute" style="top: 10px; left: 10px; height: 100px" src="./assets/wordcamp-logo.png" />
+
+<div class="position-absolute" style="bottom: 20px; left: 20px;">
+  <span class="text-lg">Φίλιππος Καραϊλανίδης @ ByteRail</span>
+</div>

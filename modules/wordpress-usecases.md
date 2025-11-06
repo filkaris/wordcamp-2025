@@ -102,7 +102,7 @@ function my_cache_init() {
 
 <v-drag-arrow pos="427,188,-145,-32"/>
 
-<span class="position-absolute" style="left: 432px; top: 177px">Δεν Υπάρχει!</span>
+<span v-after class="position-absolute" style="left: 432px; top: 177px">Δεν Υπάρχει!</span>
 
 </v-clicks>
 
@@ -178,5 +178,3 @@ layout: cover
 - Χρήση Plan Mode
 - Σχόλια στο πλάνο και βελτίωση μέχρι να καταλήξουμε
 </v-clicks>
-
----

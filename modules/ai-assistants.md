@@ -87,11 +87,11 @@ img {
 
 ![](../assets/permission1.png)
 
-<v-drag-arrow color="#f00" pos="34,313,95,65"/>
+<v-drag-arrow color="#f00" pos="33,313,97,89"/>
 
 ![](../assets/permissions2.png)
 
-<v-drag-arrow color="#f00" pos="534,348,-173,105"/>
+<v-drag-arrow color="#f00" pos="534,348,-180,126"/>
 </v-clicks>
 
 ---
@@ -101,7 +101,7 @@ img {
 <v-clicks depth=2>
 
 - Επιτρέπει στον agent να τρέχει σε loop
-- Πχ. "Προσθεσε ενα flag στην get_my_post()"
+- Πχ. `Προσθεσε ενα flag στην get_my_post()`
     - 🔎 αναζητηση στο codebase για `get_my_post`
     - 📄 διαβασμα αρχειου `my-plugin.php`
     - ✏️ επεξεργασια αρχειου `my-plugin.php`
