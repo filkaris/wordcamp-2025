@@ -11,7 +11,7 @@
 
 # Intro - 2'
 - Εισαγωγη
-- Λίγα λόγια για μένα
+    - Λίγα λόγια για μένα
 - Για ποιον είναι η ομιλία
     - Have you written your own plugin/theme? (not contribution)
     - If not, I have MCP goodies at the end
@@ -27,6 +27,7 @@
     - Different models
     - Different sizes
     - Different context capacity
+    - Thinking / non-thinking
 - What are interfaces
     - Chatbot
         - examples
