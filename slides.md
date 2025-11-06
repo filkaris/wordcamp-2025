@@ -53,4 +53,8 @@ layout: two-cols-header
 src: ./modules/foundation.md
 ---
 
+---
+src: ./modules/ai-assistants.md
+---
+
 Page
