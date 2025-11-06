@@ -27,18 +27,12 @@ layout: cover
 </v-click> 
 
 ---
-layout: two-cols-header
----
 
-# LLM
+# LLM (1/3)
 
 <v-clicks>
 
 Σκεφτείτε LLM = 📱
-</v-clicks>
-
-::left::
-<v-clicks>
 
 ## Κατασκευαστής
 </v-clicks>
@@ -57,7 +51,11 @@ layout: two-cols-header
 - 🧠 gpt-3, gpt-4, gpt-5
 </v-clicks>
 
-::right::
+---
+
+# LLM (2/3)
+
+Σκεφτείτε LLM = 📱
 
 <v-clicks>
 
@@ -65,7 +63,7 @@ layout: two-cols-header
 </v-clicks>
 <v-clicks>
 
-- 📱 iPhone 17 / 17 Pro / 17 Pro Max
+- 📱 17, 17 Pro, 17 Pro Max
 - 🧠 gpt-5-nano, gpt-5-mini, gpt-5
 </v-clicks>
 
@@ -78,3 +76,49 @@ layout: two-cols-header
 - 📱 256GB, 512GB
 - 🧠 250K, 400K, 1M
 </v-clicks>
+
+---
+
+# LLM (3/3)
+
+Σκεφτείτε LLM = 📱
+
+<v-clicks>
+
+## Thinking
+</v-clicks>
+<v-clicks>
+
+- 📱 ❓❓❓
+- 🧠 thinking / non-thinking
+</v-clicks>
+
+<br />
+<v-click>
+
+"Εσωτερικός Διάλογος"
+</v-click>
+
+---
+
+# Διεπαφές
+
+<v-switch>
+<template #1><img src="../assets/interface1.png" /></template>
+<template #2><img src="../assets/interface2.png" /></template>
+<template #3><img src="../assets/interface3.png" /></template>
+<template #4><img src="../assets/interface4.png" /></template>
+<template #5><img src="../assets/interface5.png" /></template>
+<template #6><img src="../assets/interface6.png" /></template>
+<template #7><img src="../assets/interface7.png" /></template>
+<template #8><img src="../assets/interface8.png" /></template>
+<template #9><img src="../assets/interface9.png" /></template>
+<template #10><img src="../assets/interface10.png" /></template>
+<template #11><img src="../assets/interface11.png" /></template>
+</v-switch>
+
+<style>
+img {
+    height: 400px
+}
+</style>
