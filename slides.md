@@ -57,4 +57,7 @@ src: ./modules/foundation.md
 src: ./modules/ai-assistants.md
 ---
 
-Page
+---
+src: ./modules/wordpress-usecases.md
+---
+

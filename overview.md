@@ -55,9 +55,9 @@
 
 # WordPress Use-Cases - 5'
 - Το Focus μας σήμερα
-  - System prompts
-  - Grounding με WordPress documentation
-  - Πρακτικά workflows
+    - System prompts
+    - Grounding με WordPress documentation
+    - Πρακτικά workflows
 - System message for WP devs
     - WordPress Coding Standards
     - I write plugins with X style (classes/ functions)
@@ -69,9 +69,9 @@
     - Use hooks json in repo
     - Force to use web search
 - Workflow: Gutenberg Block από Design
-  - Screenshot σε block code
-  - Χρήση @wordpress/components
-  - Συμπερίληψη block.json
+    - Screenshot σε block code
+    - Χρήση @wordpress/components
+    - Συμπερίληψη block.json
 - Workflow: Custom plugin with complex admin panel
 - Workflow: Something for WooCommerce?
 
