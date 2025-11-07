@@ -1,7 +1,7 @@
 ---
 theme: default
 layout: cover
-background: /wordcamp-bg.jpg
+background: /assets/wordcamp-bg.jpg
 class: text-center
 ---
 
@@ -67,7 +67,7 @@ src: ./modules/mcp-usecases.md
 
 ---
 layout: cover
-background: /wordcamp-bg.jpg
+background: /assets/wordcamp-bg.jpg
 class: text-center
 ---
 
@@ -81,7 +81,7 @@ class: text-center
 
 ---
 layout: cover
-background: /wordcamp-bg.jpg
+background: /assets/wordcamp-bg.jpg
 class: text-center
 ---
 
